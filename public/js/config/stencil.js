@@ -36,6 +36,74 @@ App.config = App.config || {};
     App.config.stencil.shapes = {};
 
     App.config.stencil.shapes.standard = [
+        {
+            type: 'uml.Class',
+            name: 'Class',
+            attributes: ['+attr1'],
+            methods: ['-setAttr1()'],
+            size: {
+                width: 150,
+                height: 100
+            },
+            attrs: {
+                root: {
+                    dataTooltip: 'Class',
+                    dataTooltipPosition: 'left',
+                    dataTooltipPositionSelector: '.joint-stencil'
+                },
+                '.uml-class-name-rect': {
+                    top: 2,
+                    fill: '#61549c',
+                    stroke: '#f6f6f6',
+                    'stroke-width': 1,
+                    rx: 8,
+                    ry: 8
+                },
+                '.uml-class-attrs-rect': {
+                    top: 2,
+                    fill: '#61549c',
+                    stroke: '#f6f6f6',
+                    'stroke-width': 1,
+                    rx: 8,
+                    ry: 8
+                },
+                '.uml-class-methods-rect': {
+                    top: 2,
+                    fill: '#61549c',
+                    stroke: '#f6f6f6',
+                    'stroke-width': 1,
+                    rx: 8,
+                    ry: 8
+                },
+                '.uml-class-name-text': {
+                    ref: '.uml-class-name-rect',
+                    'ref-y': 0.5,
+                    'y-alignment': 'middle',
+                    fill: '#f6f6f6',
+                    'font-family': 'Roboto Condensed',
+                    'font-weight': 'Normal',
+                    'font-size': 11
+                },
+                '.uml-class-attrs-text': {
+                    ref: '.uml-class-attrs-rect',
+                    'ref-y': 0.5,
+                    'y-alignment': 'middle',
+                    fill: '#f6f6f6',
+                    'font-family': 'Roboto Condensed',
+                    'font-weight': 'Normal',
+                    'font-size': 11
+                },
+                '.uml-class-methods-text': {
+                    ref: '.uml-class-methods-rect',
+                    'ref-y': 0.5,
+                    'y-alignment': 'middle',
+                    fill: '#f6f6f6',
+                    'font-family': 'Roboto Condensed',
+                    'font-weight': 'Normal',
+                    'font-size': 11
+                }
+            }
+        },
         /* person */
         {
             type: 'standard.EmbeddedImage',
